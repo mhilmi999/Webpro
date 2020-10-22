@@ -52,7 +52,7 @@
                   </div>
                </div>
                <div class="col-md-3 col-lg-2">
-                  <div class="right_bt"><a class="bt_main" href="index.html">Get Support</a> </div>
+                  <div class="right_bt"><a class="bt_main" href="<?= BASEURL ?>/Account">Sign In</a> </div>
                </div>
             </div>
          </div>
