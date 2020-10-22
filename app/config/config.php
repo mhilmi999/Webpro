@@ -7,4 +7,4 @@ define('BASEURL', 'http://localhost:8080/Webpro/public');
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'mvc');
+define('DB_NAME', 'pktiInc');
