@@ -73,7 +73,7 @@
          </div>
          <!-- footer bottom -->
          <div class="footer_bottom">
-            <p>Dessigned and developed by <strong>html.design</strong></p>
+            <p>Dessigned and developed by <strong>mhilmi999</strong></p>
          </div>
       </footer>
       <!-- end footer -->

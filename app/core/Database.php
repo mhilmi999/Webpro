@@ -72,4 +72,9 @@ class Database {
     {
         return $this->stmt->rowCount();
     }
+
+    public function singleOBJ(){
+        $this->execute();
+        return $this->stmt->fetch(PDO::FETCH_OBJ);
+    }
 }
