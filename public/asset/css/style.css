@@ -38,9 +38,11 @@
     -o-transition: ease all 0.5s;
 }
 
-
-input,button,select,textarea {
-	outline: none !important;
+input,
+button,
+select,
+textarea {
+    outline: none !important;
 }
 
 html,
@@ -194,12 +196,11 @@ button.btn:focus {
 }
 
 button {
-	transition: ease all 0.5s;
-	cursor: pointer;
+    transition: ease all 0.5s;
+    cursor: pointer;
 }
 
 .bt_main {
-
     color: #fff;
     font-size: 14px;
     min-width: 148px;
@@ -211,7 +212,6 @@ button {
     border: none;
     padding: 0 35px;
     transition: ease all 0.5s;
-
 }
 
 .bt_main:hover,
@@ -250,7 +250,8 @@ button {
     min-width: 148px;
 }
 
-.field button:hover, .field button:focus {
+.field button:hover,
+.field button:focus {
     background: #ffffff;
     color: #1e72bc;
 }
@@ -342,7 +343,6 @@ blockquote {
 .padding_0 {
     padding: 0 !important;
 }
-
 
 h2 {
     font-size: 54px;
@@ -785,16 +785,17 @@ section .small_head h2 {
 }
 
 .margin_top_30 {
-    margin-top: 30px; 
+    margin-top: 30px;
 }
 
 .margin_bottom_30 {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
 }
 
 .padding_top_0 {
     padding-top: 0 !important;
 }
+
 
 /*------------------------------------------------------------------
         4. loader
@@ -885,13 +886,13 @@ div.left_head ul li i {
 
 .right_head .social_icon_part {
     float: left;
-
 }
 
 .right_head .button_section {
     float: right;
     width: auto;
 }
+
 
 /**-- logo --**/
 
@@ -963,42 +964,42 @@ div.left_head ul li i {
     font-size: 11px;
 }
 
-.menu > ul {
+.menu>ul {
     margin: 0;
     width: 100%;
     list-style: none;
 }
 
-.menu > ul:before,
-.menu > ul:after {
+.menu>ul:before,
+.menu>ul:after {
     content: "";
     display: table;
 }
 
-.menu > ul:after {
+.menu>ul:after {
     clear: both;
 }
 
-.menu > ul > li {
+.menu>ul>li {
     float: left;
     padding: 0;
     margin: 0;
 }
 
-.menu > ul > li a {
+.menu>ul>li a {
     padding: 15px 15px;
     display: block;
     color: #333;
     font-size: 15px;
 }
 
-.menu > ul > li:hover > a,
-.menu > ul > li:focus > a,
-.menu > ul > li.active > a {
+.menu>ul>li:hover>a,
+.menu>ul>li:focus>a,
+.menu>ul>li.active>a {
     color: #1e72bc;
 }
 
-.menu > ul > li > ul {
+.menu>ul>li>ul {
     display: none;
     width: 100%;
     background-color: #fff;
@@ -1017,17 +1018,17 @@ div.left_head ul li i {
     border-top: solid #1e72bc 5px;
 }
 
-.menu > ul > li > ul:before,
-.menu > ul > li > ul:after {
+.menu>ul>li>ul:before,
+.menu>ul>li>ul:after {
     content: "";
     display: table;
 }
 
-.menu > ul > li > ul:after {
+.menu>ul>li>ul:after {
     clear: both;
 }
 
-.menu > ul > li > ul > li {
+.menu>ul>li>ul>li {
     margin: 0;
     list-style: none;
     width: 25%;
@@ -1037,22 +1038,22 @@ div.left_head ul li i {
     min-height: auto;
 }
 
-.menu > ul > li > ul > li:nth-child(4) {
+.menu>ul>li>ul>li:nth-child(4) {
     border-right: none;
 }
 
-.menu > ul > li > ul > li a {
+.menu>ul>li>ul>li a {
     color: #222;
     padding: 0;
     width: 100%;
     display: block;
 }
 
-.menu > ul > li > ul > li a:hover {
+.menu>ul>li>ul>li a:hover {
     color: #1e72bc;
 }
 
-.menu > ul > li > ul > li >ul {
+.menu>ul>li>ul>li>ul {
     display: block;
     padding: 0;
     margin: 0;
@@ -1060,29 +1061,29 @@ div.left_head ul li i {
     box-sizing: border-box;
 }
 
-.menu > ul > li > ul > li > ul:before,
-.menu > ul > li > ul > li > ul:after {
+.menu>ul>li>ul>li>ul:before,
+.menu>ul>li>ul>li>ul:after {
     content: "";
     display: table;
 }
 
-.menu > ul > li > ul > li > ul:after {
+.menu>ul>li>ul>li>ul:after {
     clear: both;
 }
 
-.menu > ul > li > ul > li > ul > li {
+.menu>ul>li>ul>li>ul>li {
     float: left;
     width: 100%;
     padding: 10px;
 }
 
-.menu > ul > li > ul > li > ul >li a {
+.menu>ul>li>ul>li>ul>li a {
     border: 0;
     font-size: 13px;
     font-weight: 400;
 }
 
-.menu > ul > li > ul.normal-sub {
+.menu>ul>li>ul.normal-sub {
     width: 300px;
     left: auto;
     padding: 15px 10px;
@@ -1090,13 +1091,13 @@ div.left_head ul li i {
     background-image: none;
 }
 
-.menu > ul > li > ul.normal-sub > li {
+.menu>ul>li>ul.normal-sub>li {
     width: 100%;
     padding: 10px 15px;
     min-height: auto;
 }
 
-.menu > ul > li > ul.normal-sub >li a {
+.menu>ul>li>ul.normal-sub>li a {
     border: 0;
     font-size: 13px;
     font-weight: 400;
@@ -1106,6 +1107,7 @@ div.left_head ul li i {
     float: right;
     margin-top: 23px;
 }
+
 
 /** social icon **/
 
@@ -1137,7 +1139,7 @@ section .social_icons {
 
 .social_icons li a:hover,
 .social_icons li a:focus {
-   color: #0aceb1;
+    color: #0aceb1;
 }
 
 .logo img {
@@ -1166,7 +1168,7 @@ section .social_icons {
     margin-bottom: 30px;
 }
 
-#banner_parallax p, 
+#banner_parallax p,
 #banner_slide p {
     color: #fff;
     font-weight: 300;
@@ -1232,6 +1234,7 @@ section .social_icons {
     margin-top: 10px;
 }
 
+
 /**-- slide style 2 **/
 
 
@@ -1295,6 +1298,7 @@ h3.heading_2 {
     line-height: 21px;
 }
 
+
 /**-- contant section --**/
 
 .theme_bg {
@@ -1321,17 +1325,15 @@ h3.heading_2 {
 }
 
 .app-features li {
-
     padding-left: 100px;
     position: relative;
     margin: 25px 0 0;
     float: left;
     border-bottom: dotted 1px #ddd;
     padding-bottom: 25px;
-
 }
 
-.app-features li > i {
+.app-features li>i {
     position: absolute;
     left: 0;
     width: 90px;
@@ -1353,8 +1355,8 @@ h3.heading_2 {
     border-bottom: none;
 }
 
-.app-features li:hover > i,
-.app-features li:focus > i {
+.app-features li:hover>i,
+.app-features li:focus>i {
     background: #1e72bc;
     border-color: #1e72bc;
     color: #fff;
@@ -1429,6 +1431,7 @@ section.cross_layout {
     line-height: normal;
     margin-top: 25px;
 }
+
 
 /*------------------------------------------------------------------
         8. price table
@@ -1639,7 +1642,6 @@ section.cross_layout {
 }
 
 
-
 /**-- map --**/
 
 #map {
@@ -1759,7 +1761,8 @@ footer {
     color: #999;
 }
 
-.footer-links a:hover, .footer a:hover {
+.footer-links a:hover,
+.footer a:hover {
     color: #1e72bc !important;
 }
 
@@ -1798,7 +1801,6 @@ footer {
     margin-top: 5px;
     margin-bottom: 0;
 }
-
 
 
 /**== dark footer ==**/
@@ -1889,6 +1891,7 @@ footer {
     line-height: normal;
 }
 
+
 /** pagination **/
 
 .pagination_section {
@@ -1925,7 +1928,6 @@ ul.pagination li.page-item.active .page-link {
 
 /** imformation blog **/
 
-
 .imf_icon img {
     width: 125px;
 }
@@ -1959,12 +1961,12 @@ ul.pagination li.page-item.active .page-link {
     margin-bottom: 15px;
 }
 
-.inner_page_banner + .layout_padding {
+.inner_page_banner+.layout_padding {
     padding-top: 0 !important;
 }
 
-/**-- step section --**/
 
+/**-- step section --**/
 
 .step_inner {
     width: 100%;
@@ -2002,5 +2004,3 @@ ul.pagination li.page-item.active .page-link {
     float: left;
     width: 25%;
 }
-
-

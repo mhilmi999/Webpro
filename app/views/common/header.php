@@ -50,7 +50,7 @@
                   </div>
                </div>
                <div class="col-md-3 col-lg-2">
-                  <div class="right_bt"><a class="bt_main" href="<?= BASEURL; ?>/Account/login">Sign In</a> </div>
+                  <div class="right_bt"><a class="bt_main" href="<?= BASEURL; ?>/Account/login">Login</a> </div>
                </div>
             </div>
          </div>
