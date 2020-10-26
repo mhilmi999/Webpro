@@ -18,6 +18,9 @@
   <!-- Custom styles for this template-->
   <link href="<?= BASEURL ?>/asset2/css/sb-admin-2.min.css" rel="stylesheet">
 
+    <!-- Logo PKTI.Inc diatas -->
+    <link rel="icon" href="<?= BASEURL; ?>/asset/images/fevicon/fevicon.png" type="image/png" />
+
 </head>
 
 <body id="page-top">
@@ -56,21 +59,21 @@
 
       <!-- Nav Item - Baru Masuk -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= BASEURL;?>/Panitia/ktiMasuk">
         <i class="fas fa-business-time"></i>
           <span>Baru Masuk</span></a>
       </li>
 
       <!-- Nav Item - Pemeriksaan -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= BASEURL;?>/Panitia/ktiPeriksa">
         <i class="fas fa-spinner"></i>
           <span>Pemeriksaan</span></a>
       </li>
 
       <!-- Nav Item - Pemeriksaan -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= BASEURL;?>/Panitia/ktiSelesai">
         <i class="fas fa-check-circle"></i>
           <span>Selesai</span></a>
       </li>
@@ -93,7 +96,7 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?= BASEURL;?>/Panitia/selesaiSertif">
         <i class="fas fa-certificate"></i>
           <span>Selesai</span></a>
       </li>

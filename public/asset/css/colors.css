@@ -24,7 +24,7 @@
 
 .bt_main:hover,
 .bt_main:focus {
-    background: #111;
+    background: #22a6b3;
     color: #fff;
 }
 
@@ -2001,4 +2001,8 @@ footer ul.social_icons li a:hover {
 .blue_green_theme .read_more_bt:hover,
 .blue_green_theme .read_more_bt:focus {
     color: #17c967;
+}
+
+color: #17c967;
+
 }

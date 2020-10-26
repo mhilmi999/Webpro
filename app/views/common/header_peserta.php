@@ -18,6 +18,9 @@
   <!-- Custom styles for this template-->
   <link href="<?= BASEURL ?>/asset2/css/sb-admin-2.min.css" rel="stylesheet">
 
+  <!-- Logo PKTI.Inc diatas -->
+  <link rel="icon" href="<?= BASEURL; ?>/asset/images/fevicon/fevicon.png" type="image/png" />
+
 </head>
 
 <body id="page-top">
