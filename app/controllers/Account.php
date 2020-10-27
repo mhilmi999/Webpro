@@ -8,7 +8,7 @@ class Account extends Controller
 
     public function login(){
 
-        $this->view('common/login_register');
+        $this->view('common/login');
     }
 
     public function checkingLogin(){
@@ -72,7 +72,58 @@ class Account extends Controller
         $this->view('templates/pelanggan/footer');
     }
 
+    public function register(){
+        $this->view('common/register');
+    }
+
     public function createAccount(){
+        $userData = [
+            'username'      => $this->input('username'),
+            'nama'          => $this->input('nama'),
+            'email'         => $this->input('email'),
+            'password'      => $this->input('password'),
+            'usernameError' => '',
+            'namaError'     => '',
+            'emailError'    => '',
+            'passwordError' => ''
+        ];
+
+        if(empty($userData['email'])){
+            $userData['emailError'] = "Mohon inputkan email Anda";
+        }
+
+        if(empty($userData['nama'])){
+            $userData['namaError'] = 'Mohon masukan nama Anda';
+        }
+
+        if(empty($userData['username'])){
+            $userData['usernameError'] = 'Mohon masukan username '; 
+        }else{
+
+            $username = $this->accountModel->checkUsername($userData['username']); 
+            if(!empty($username)){
+               $userData['usernameError'] = "Mohon maaf username telah terdaftar";  
+            }
+        }
+
+        if(empty($userData['password'])){
+            $userData['passwordError'] = "Mohon masukan password karena dibutuhkan";
+        }else if(strlen($userData['password'] < 6)){
+            $userData['passwordError'] = "Minimal 6 karakter untuk password";
+        }
+
+        if(empty($userData['namaError']) && empty($userData['usernameError'] && empty($userData['passwordError']))){
+            $password = password_hash($userData['password'], PASSWORD_DEFAULT);
+            //$data = [$userData['username'], $userData['nama'], $userData['email'], $password];
+        
+            if($this->accountModel->createAccount($userData)){
+               // die;
+                Flasher::setFlash("Your account has been created successfully, please login","accountCreated", "success");
+                header('location:' . BASEURL . '/Account/login' );
+            }
+        }else{
+            $this->view('common/register', $userData);
+        }
 
     }
 

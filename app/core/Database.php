@@ -26,9 +26,15 @@ class Database {
         }
     }
 
-    public function query($query)
+    public function query($query, $params = [])
     {
-        $this->stmt = $this->dbh->prepare($query);
+        if(empty($params)){
+            $this->stmt = $this->dbh->prepare($query);
+            //return $this->stmt->execute();
+        }else{
+            $this->stmt = $this->dbh->prepare($query);
+            return $this->stmt->execute($params);
+        }
     }
 
     public function bind($param, $value, $type = null) {
