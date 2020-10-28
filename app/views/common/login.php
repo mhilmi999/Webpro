@@ -36,10 +36,13 @@
             <div class="row">
              
               <div class="col">
+              <div class="text-center" style="margin-top:20px;margin-bottom:-20px;"><a href="<?= BASEURL;?>">
+                    <img  style="height:50px;width:200px;  " src="<?= BASEURL; ?>/asset/images/logo.png" alt="#" /></a>
+                  </div>
                 <div class="p-5">
                   <div class="text-center">
                     <?php Flasher::flash();?>
-                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                    <h1 class="h6 text-gray-900 mb-4">Welcome Back!</h1>
                   </div>
                   <form method="POST" action="<?= BASEURL;?>/Account/checkingLogin" class="user">
                     <div class="form-group">

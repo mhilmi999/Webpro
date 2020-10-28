@@ -7,7 +7,7 @@ class Account_model extends Database {
         $this->db = new Database;
     }
 
-    function createAccount($data){
+    function createAccount($data, $password){
         /*
         if($this->query("INSERT INTO users (username, nama, email, password) VALUES (:username, :nama, :email, :password)", $data)){
             return true;
@@ -19,28 +19,13 @@ class Account_model extends Database {
              $this->db->bind(':username', $data['username']);
              $this->db->bind(':nama', $data['nama']);
              $this->db->bind(':email', $data['email']);
-             $this->db->bind(':password', $data['password']);
+             $this->db->bind(':password', $password);
  
              
              $this->db->execute();
              return $this->db->rowCount();
     }
 
-   function insertNewuser($data){
-       //$roles = $this->input->post('roles');
-
-       
-       //Daftarkan user di tabel users
-       $q = "INSERT INTO users (nama, username, password, email)
-            VALUES (:nama, :username, :password, :email)";
-        $this->db->query($q);
-        $this->db->bind(':nama', $data['nama']);
-        $this->db->bind(':username', $data['username']);
-        $this->db->bind(':password', $data['password']);
-        $this->db->bind(':email', $data['email']);
-        
-        $this->db->execute();
-   }
 
    function login($username, $password){
        $this->db->query("SELECT * FROM users WHERE username = :username");

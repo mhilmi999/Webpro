@@ -116,7 +116,7 @@ class Account extends Controller
             $password = password_hash($userData['password'], PASSWORD_DEFAULT);
             //$data = [$userData['username'], $userData['nama'], $userData['email'], $password];
         
-            if($this->accountModel->createAccount($userData)){
+            if($this->accountModel->createAccount($userData, $password)){
                // die;
                 Flasher::setFlash("Your account has been created successfully, please login","accountCreated", "success");
                 header('location:' . BASEURL . '/Account/login' );
