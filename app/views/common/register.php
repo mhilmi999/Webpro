@@ -41,7 +41,7 @@
                   </div>
                 <div class="p-5">
                   <div class="text-center">
-                  <h2 class="h6 text-gray-900 mb-4">Create an Account!</h2>
+                  <h2 class="h6 text-gray-900 mb-4">Yuk! Buat Akun Sekarang</h2>
               </div>
               <form method="post" action="<?= BASEURL;?>/Account/createAccount" class="user">
                 <div class="form-group row">
@@ -62,9 +62,14 @@
                   value="<?php if(!empty($data['email'])): echo $data['email']; endif;?>">
                 </div>
                 <div class="form-group">
-                <?php if(!empty($data['passwordError'])) : echo $data['passwordError']; endif;?>
+                  <?php if(!empty($data['passwordError'])) : echo $data['passwordError']; endif;?>
                   <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Masukan Password Yang Akan Didaftarkan"
                   value="<?php if(!empty($data['password'])): echo $data['password']; endif;?>">
+                </div>
+                <div class="form-group">
+                <?php if(!empty($data['emailError'])) : echo $data['emailError']; endif;?>
+                  <input type="email" class="form-control form-control-user" id="email" name="email" placeholder="Peserta"
+                  value="<?php if(!empty($data['email'])): echo $data['email']; endif;?>" readonly>
                 </div>
                 
                 <!--
@@ -78,12 +83,12 @@
                 </div>
 -->
                 <button class="btn btn-primary btn-user btn-block" name="submit" type="sumbit" value="submit" id="submit">
-                    Register
+                    Daftar
                 </button>
               </form>
               <hr>
               <div class="text-center">
-                <a class="small" href="<?= BASEURL; ?>/Account/login">Already have an account? Login!</a>
+                <a class="small" href="<?= BASEURL; ?>/Account/login">Sudah punya Akun? Login sekarang!</a>
               </div>
                 </div>
               </div>

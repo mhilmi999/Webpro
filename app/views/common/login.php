@@ -42,7 +42,7 @@
                 <div class="p-5">
                   <div class="text-center">
                     <?php Flasher::flash();?>
-                    <h1 class="h6 text-gray-900 mb-4">Welcome Back!</h1>
+                    <h1 class="h6 text-gray-900 mb-4">Selamat Datang!</h1>
                   </div>
                   <form method="POST" action="<?= BASEURL;?>/Account/checkingLogin" class="user">
                     <div class="form-group">
@@ -58,11 +58,11 @@
                       </div>
                     </div>
                     <button class="btn btn-primary btn-user btn-block" name="submit" type="sumbit" value="submit" id="submit">
-                    Login
+                    Masuk
                 </button>
                 <hr>
                   <div class="text-center">
-                    <a class="small" href="<?= BASEURL;?>/Account/register">Create an Account!</a>
+                    <a class="small" href="<?= BASEURL;?>/Account/register">Belum punya Akun? Buat Sekarang!</a>
                   </div>
                 </div>
               </div>
