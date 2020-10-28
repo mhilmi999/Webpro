@@ -28,7 +28,7 @@
     <!-- Outer Row -->
     <div class="row justify-content-center">
 
-      <div class="col-lg-6">
+      <div class="col-lg-6" style="margin-top: 40px;">
 
         <div class="card o-hidden border-0 shadow-lg my-5">
           <div class="card-body p-0">
@@ -57,6 +57,7 @@
                         <label class="custom-control-label" for="customCheck">Remember Me</label>
                       </div>
                     </div>
+                    <hr>
                     <button class="btn btn-primary btn-user btn-block" name="submit" type="sumbit" value="submit" id="submit">
                     Masuk
                 </button>

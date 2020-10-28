@@ -82,6 +82,7 @@ class Account extends Controller
             'nama'          => $this->input('nama'),
             'email'         => $this->input('email'),
             'password'      => $this->input('password'),
+            'id_grup'         => $this->input('id_grup'),
             'usernameError' => '',
             'namaError'     => '',
             'emailError'    => '',
@@ -115,7 +116,8 @@ class Account extends Controller
         if(empty($userData['namaError']) && empty($userData['usernameError'] && empty($userData['passwordError']))){
             $password = password_hash($userData['password'], PASSWORD_DEFAULT);
             //$data = [$userData['username'], $userData['nama'], $userData['email'], $password];
-        
+            var_dump($userData, $password);
+            die;
             if($this->accountModel->createAccount($userData, $password)){
                // die;
                 Flasher::setFlash("Your account has been created successfully, please login","accountCreated", "success");

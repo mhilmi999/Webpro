@@ -28,7 +28,7 @@
     <!-- Outer Row -->
     <div class="row justify-content-center">
 
-      <div class="col-lg-6">
+      <div class="col-lg-6" style="margin-top: 40px;">
           
         <div class="card o-hidden border-0 shadow-lg my-5">
           <div class="card-body p-0">
@@ -65,13 +65,12 @@
                   <?php if(!empty($data['passwordError'])) : echo $data['passwordError']; endif;?>
                   <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Masukan Password Yang Akan Didaftarkan"
                   value="<?php if(!empty($data['password'])): echo $data['password']; endif;?>">
+                </div>                
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" value="2" id="id_grup" name="id_grup" checked disabled>
+                  <label class="custom-control-label" for="id_grup">Peserta</label>
                 </div>
-                <div class="form-group">
-                <?php if(!empty($data['emailError'])) : echo $data['emailError']; endif;?>
-                  <input type="email" class="form-control form-control-user" id="email" name="email" placeholder="Peserta"
-                  value="<?php if(!empty($data['email'])): echo $data['email']; endif;?>" readonly>
-                </div>
-                
+                <hr>
                 <!--
                 <div class="form-group row">
                   <div class="col-sm-6 mb-3 mb-sm-0">
