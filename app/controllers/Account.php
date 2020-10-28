@@ -53,10 +53,8 @@ class Account extends Controller
                     $this->createUserSession($loggedInUser);
                 } else {
                     $data['passwordError'] = 'Password or username is incorrect. Please try again.';
-                    $this->view('templates/pelanggan/header');
-                    $this->view('home/login', $data);
-                    $this->view('templates/pelanggan/footer');
-                }
+                    $this->view('common/login');
+                    }
             }
 
         } else {
@@ -67,10 +65,8 @@ class Account extends Controller
                 'passwordError' => ''
             ];
         }
-        $this->view('templates/pelanggan/header');
-        $this->view('home/index');
-        $this->view('templates/pelanggan/footer');
-    }
+        $this->view('common/login');
+        }
 
     public function register(){
         $this->view('common/register');
@@ -82,7 +78,7 @@ class Account extends Controller
             'nama'          => $this->input('nama'),
             'email'         => $this->input('email'),
             'password'      => $this->input('password'),
-            'id_grup'         => $this->input('id_grup'),
+            //'id_grup'         => $this->input('id_grup'),
             'usernameError' => '',
             'namaError'     => '',
             'emailError'    => '',
@@ -151,6 +147,7 @@ class Account extends Controller
         }*/
     }
 
+    /*
     public function creatingAccount($id_grup){
         $data = [
             'id_grup' => '',
@@ -256,6 +253,6 @@ class Account extends Controller
         $this->view('home/register', $data);
         $this->view('templates/pelanggan/footer');
     }
-
+*/
 }
 
