@@ -65,7 +65,7 @@ class Account extends Controller
                 'passwordError' => ''
             ];
         }
-        $this->view('common/login');
+        //$this->view('common/login');
         }
 
     public function register(){
@@ -78,7 +78,7 @@ class Account extends Controller
             'nama'          => $this->input('nama'),
             'email'         => $this->input('email'),
             'password'      => $this->input('password'),
-            //'id_grup'         => $this->input('id_grup'),
+            'id_grup'         => $this->input('id_grup'),
             'usernameError' => '',
             'namaError'     => '',
             'emailError'    => '',
@@ -114,6 +114,7 @@ class Account extends Controller
             //$data = [$userData['username'], $userData['nama'], $userData['email'], $password];
             var_dump($userData, $password);
             die;
+
             if($this->accountModel->createAccount($userData, $password)){
                // die;
                 Flasher::setFlash("Your account has been created successfully, please login","accountCreated", "success");
@@ -129,7 +130,7 @@ class Account extends Controller
         
         //Melakukan set session
         $_SESSION['id_user'] = $user->id_user;
-        $_SESSION['id_grup'] = $user->id_grup;
+        //$_SESSION['id_grup'] = $user->id_grup;
         $_SESSION['username'] = $user->username;
         $_SESSION['email'] = $user->email;
         

@@ -32,11 +32,11 @@
     <ul class="navbar-nav bg-gradient-info sidebar sidebar-dark accordion" id="accordionSidebar">
 
       <!-- Sidebar - Brand -->
-      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+      <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= BASEURL;?>">
         <div class="sidebar-brand-icon ">
-        <i class="fas fa-chalkboard-teacher"></i>
+          <img  style="height:50px;width:200px;  " src="<?= BASEURL; ?>/asset/images/logo2.png" alt="#" />
         </div>
-        <div class="sidebar-brand-text mx-3">Panitia</div>
+              
       </a>
 
       <!-- Divider -->
